@@ -25,3 +25,5 @@ lapply(samples, function(filename){
   curl_download(paste(dir1, filename, sep = ""), destfile = paste0(file.path(my.path, "raw"),"/",filename))
   unzip(paste0(file.path(my.path, "raw"),"/",filename), exdir="/pfs/out")
 })
+  
+}
